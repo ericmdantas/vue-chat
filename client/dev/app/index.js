@@ -1,5 +1,9 @@
 import './app.css';
 
-module.exports = {
-	template: require('./app.html'),
+export default {
+	render(h) {
+		return `<div id="chat">
+					<router-view></router-view>
+			    </div>`
+	}
 }
