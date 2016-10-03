@@ -17,13 +17,13 @@ module.exports = (env) => {
 					loader: 'style!css!'
 				},
 				{
+					test: /\.html/,
+					loader: 'html'
+				},
+				{
 					test: /\.js$/,
 					loader: 'babel',
 					exclude: /(node_modules)/
-				},
-				{
-					test: /\.html/,
-					loader: 'html'
 				}
 			]
 		}
