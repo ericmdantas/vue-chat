@@ -1,3 +1,10 @@
-<div>
-    <h1>?</h1>
+<div class="chat-container">
+    <div class="chat-msg-container"
+         v-for="m in msgs" 
+         track-by="$index">
+        {{m.msg}}        
+    </div>    
+    
+    <input type="text"
+           class="chat-input" />
 </div>
