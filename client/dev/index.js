@@ -1,6 +1,8 @@
-import Vue from 'Vue';
-import App from './app';
+import Vue from 'vue';
 
 new Vue({
-	render: (h) => h(App)
-}).$mount('#chat');
+	el: '#chat',
+	components: {
+		'app': require('./app/index.js')
+	}
+});
