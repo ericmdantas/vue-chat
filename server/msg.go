@@ -1,8 +1,10 @@
 package server
 
+type msgData struct {
+	Text string `json:"text"`
+}
+
 type Msg struct {
 	Type string `json:"type"`
-	Data struct {
-		Text string `json:"text"`
-	} `json:"data"`
+	Data msgData `json:"data"`
 }
