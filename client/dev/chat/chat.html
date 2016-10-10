@@ -5,6 +5,12 @@
         {{m.msg}}        
     </div>    
     
-    <input type="text"
-           class="chat-input" />
+    <div>
+        <input type="text"
+               class="chat-input" 
+               v-model="msg" />
+            
+        <button type="button"
+                @click="send(msg)">Send</button>
+    </div>
 </div>
